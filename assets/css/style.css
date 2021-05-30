@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.franchise .banner {
+  background-color: #fff;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
+.franchise .banner .main-content {
+  font-weight: 200;
+  position: relative;
+  top: 20px;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  z-index: 11 !important;
+}
+
+.franchise .banner .main-content .bold {
+  font-size: 3rem;
+}
+
+.franchise .banner .main-content .col-lg-6 {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media only screen and (max-width: 768px) {
+  .franchise .banner .main-content {
+    height: auto;
+    top: 100px;
+  }
+}
+
+.franchise .banner #shop-image {
+  position: absolute;
+  top: -300px;
+  width: 693px;
+}
+
+@media only screen and (max-width: 768px) {
+  .franchise .banner #shop-image {
+    height: auto;
+    top: -70px;
+  }
+}
+
+.franchise .banner .bold {
+  font-size: 49px;
+  color: #535353;
+  font-family: "Segoe UI";
+}
+
+.franchise .banner h6 {
+  font-size: 23px;
+  letter-spacing: 2px;
+  color: #414141;
+  font-family: "Segoe UI Historic";
+}
+
+.franchise .banner p {
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #414141;
+  font-family: "Segoe UI Historic";
+}
+
+.franchise .banner #collaps1, .franchise .banner #collaps2 {
+  font-weight: 600;
+  color: #555555;
+  margin-bottom: 60px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.franchise .banner #collaps1 .fa-minus, .franchise .banner #collaps2 .fa-minus {
+  display: none;
+}
+
+.franchise .banner .clicked {
+  color: #fff !important;
+  background-color: #0084ff;
+}
+
+.franchise .banner .clicked .fa-plus {
+  display: none !important;
+}
+
+.franchise .banner .clicked .fa-minus {
+  display: inline-block !important;
+  color: #fff;
+}
+
+.franchise .banner h3 {
+  font-weight: 500;
+}
+
+.franchise .investment .col-md-6 .box-1 {
+  padding: 40px 20px;
+  background-color: #DEE7F9;
+}
+
+.franchise .investment .col-md-6 .box-1 .diveder {
+  border-bottom: solid #ACABB7 1px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.franchise .form {
+  padding: 30px;
+  margin-top: 40px;
+  background-color: #5e8fe4;
+  border-radius: 10px;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+.franchise .form h4 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.franchise .form p {
+  font-weight: 500 !important;
+}
+
+.franchise .form .form-control {
+  background-color: #DFDFEB;
+}
+
+.franchise .form .orange {
+  background-color: #FC5B53;
+  color: #fff;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .franchise .form .orange {
+    margin-top: 20px;
+  }
+}
+
+.request-info .thanks {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  color: #616b77;
+}
+
+.request-info .box-1 {
+  background-color: #CDD8E9;
+  padding: 40px 20px;
+}
+
+.request-info .box-1 p {
+  color: #261616;
+  font-size: 18px;
+}
+
+.request-info .box-1 p .orange {
+  color: #FC5B53;
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  width: 40px;
+  height: 40px;
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #ff7057;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#myBtn p {
+  line-height: 1px;
+  text-align: center;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+::-moz-selection {
+  background-color: #45acf0;
+  color: #fff;
+}
+
+::selection {
+  background-color: #45acf0;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

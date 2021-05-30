@@ -1,0 +1,88 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-size: 16px;
+  background-color: #e3f3f5;
+}
+
+.admin .green {
+  padding: 8px;
+  width: 100%;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.admin .btns {
+  margin: 40px;
+}
+
+.admin .btns button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: solid orange 1px;
+  width: 100px;
+  font-weight: 500;
+  color: dimgray;
+}
+
+.admin .btns .bg-orange {
+  background-color: orange;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.admin input {
+  width: 100% !important;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: solid orange 2px;
+  height: 30px;
+  outline: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.admin #pet-select {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: solid orange 2px;
+  height: 42px;
+  outline: none;
+  padding: 0 20px;
+  text-align: center !important;
+  color: #888888;
+}
+
+.admin .options {
+  text-align: left;
+}
+
+.admin .btnss .save-btn {
+  background-color: #17afeb;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.admin .col-lg-11 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.admin .col-lg-11 .sd-none {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .admin .gstin {
+    display: none;
+  }
+}
+/*# sourceMappingURL=admin.css.map */

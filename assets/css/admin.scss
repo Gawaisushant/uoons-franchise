@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html , body{
+    font-size: 16px;
+    background-color: rgb(227, 243, 245);
+}
+
+.admin{
+    .green{
+        padding: 8px;
+        width: 100%;
+        background-color: green;
+        border-radius: 10px;
+    }
+
+    .btns{
+        margin: 40px;
+        button{
+
+            padding:5px 10px;
+            border-radius: 10px;
+            border: solid orange 1px;
+            width: 100px;
+            font-weight: 500;
+            color: rgb(105, 105, 105);
+        }
+
+        .bg-orange{
+            background-color: orange;
+            color: #fff;
+            margin: 0 10px;
+        }
+    }
+
+    input {
+        width: 100% !important;
+        margin: 10px 0;
+        border-radius: 10px;
+        border: solid orange 2px;
+        height: 30px;
+        outline: none;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #pet-select{
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 10px;
+        border: solid orange 2px;
+        height: 42px;
+        outline: none;
+        padding: 0 20px;
+        text-align: center !important;
+        color: rgb(136, 136, 136);
+    }
+
+    .options{
+        text-align: left;
+    }
+
+    .btnss{
+        .save-btn{
+            background-color: rgb(23, 175, 235);
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+        }
+    }
+
+    .col-lg-11{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+
+        .sd-none{
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        &{
+            .gstin{
+                display: none;
+            }
+        }
+    }
+}

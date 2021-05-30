@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(250, 250, 250);
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.franchise{
+    .banner{
+        background-color: #fff;
+        margin-top: 20px;
+        font-weight: 200;
+
+        .main-content{
+            font-weight: 200;
+            position: relative;
+            top: 20px;
+            background-size: cover;
+            width: 100%;
+            height: 80vh;
+            background-repeat: no-repeat;
+            z-index: 11 !important;
+
+            .bold{
+                font-size: 3rem;
+            }
+    
+            .col-lg-6{
+                background: rgba( 255, 255, 255, 0.50 );
+                backdrop-filter: blur( 4.5px );
+                -webkit-backdrop-filter: blur( 4.5px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+            }
+
+            @media only screen and (max-width : 768px){
+                &{
+                    height: auto;
+                    top: 100px;
+                }
+            }
+        }
+
+        #shop-image{
+            position: absolute;
+            top: -300px;
+            width: 693px;
+
+            @media only screen and (max-width : 768px){
+                &{
+                    height: auto;
+                    top: -70px;
+                }
+            }
+        }
+
+
+        .bold{
+            font-size: 49px;
+            color: #535353;
+            font-family: "Segoe UI";
+        }
+        h6{
+            font-size: 23px;
+            letter-spacing: 2px;
+            color: #414141;
+            font-family: "Segoe UI Historic";
+        }
+
+        p{
+            font-size: 18px;
+            letter-spacing: 0px;
+            color: #414141;
+            font-family: "Segoe UI Historic";
+        }
+
+        #collaps1 , #collaps2{
+            .fa-minus{
+                display: none;
+            }
+            font-weight: 600;
+            color: rgb(85, 85, 85);
+            margin-bottom: 60px ;
+            transition: all 0.5s;
+        }
+        .clicked{
+            color: #fff !important;
+            background-color: rgb(0, 132, 255);
+            .fa-plus{
+                display: none !important;
+            }
+            .fa-minus{
+                display: inline-block !important;
+                color: #fff;
+            }
+        }
+
+        h3{
+            font-weight: 500;
+        }
+    }
+  
+
+    .investment{
+        .col-md-6{
+            .dark{
+
+            }
+            .box-1{
+                padding: 40px 20px;
+                background-color: #DEE7F9;
+               .diveder{
+                   border-bottom: solid #ACABB7 1px;
+                   margin-bottom: 15px;
+                   margin-top: 20px;
+               }
+            }
+        }
+    }
+
+    .form{
+        padding: 30px;
+        margin-top: 40px;
+        background-color: #5e8fe4;
+        border-radius: 10px;
+        padding-bottom: 50px;
+        color: #fff;
+        h4{
+            font-weight: 500;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        p{
+            font-weight: 500 !important;
+        }
+
+        .form-control{
+            background-color: #DFDFEB;
+        }
+
+        .orange{
+            background-color: #FC5B53;
+            color: #fff;
+            border-radius: 10px;
+            
+            @media only screen and (max-width : 768px){
+                &{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+}
+.request-info{
+    .thanks{
+        margin-top: 10px;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+        color:#616b77 ;
+    }
+
+    .box-1{
+        background-color: #CDD8E9;
+        padding: 40px 20px;
+        p{
+            color: #261616;
+            font-size: 18px;
+            .orange{
+                color: #FC5B53;
+            }
+        }
+    }
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    width: 40px;
+    height: 40px;
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(255, 112, 87); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    display: flex;
+    align-items: center;
+    p{
+        line-height: 1px;
+        text-align: center;
+    }
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  
+
+::selection {
+    background-color: #45acf0;
+    color: #fff;
+  }
