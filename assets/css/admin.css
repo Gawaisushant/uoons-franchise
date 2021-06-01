@@ -31,6 +31,8 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .admin .flex .flex-column p {
@@ -43,7 +45,6 @@ html, body {
   height: 15px;
   margin: 0 2px;
   border-radius: 8px;
-  position: relative;
 }
 
 .admin .btns {
@@ -138,7 +139,7 @@ html, body {
 }
 
 .admin .form .col-lg-11 input {
-  width: 100% !important;
+  width: 100%;
   margin: 10px 0;
   border-radius: 15px;
   border: solid #fbad77 2px;
@@ -183,8 +184,30 @@ html, body {
 }
 
 @media only screen and (max-width: 768px) {
+  .admin {
+    width: 100% !important;
+  }
   .admin .gstin {
     display: none;
+  }
+  .admin .green {
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .admin {
+    width: 100% !important;
+  }
+  .admin .gstin {
+    display: none;
+  }
+  .admin .green {
+    width: 40px;
+  }
+  .admin .btns a {
+    width: 100px;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=admin.css.map */
