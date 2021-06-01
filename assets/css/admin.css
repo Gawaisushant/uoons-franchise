@@ -8,50 +8,79 @@
 html, body {
   font-size: 16px;
   background-color: #e3f3f5;
+  scroll-behavior: smooth;
+}
+
+.admin .achieved {
+  width: 95px;
+  height: 63px;
+  font-size: 20px;
+  color: #2c2e35;
+}
+
+.admin .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.admin .flex .flex-column p {
+  color: chocolate;
 }
 
 .admin .green {
-  padding: 8px;
-  width: 100%;
-  background-color: green;
-  border-radius: 10px;
+  width: 260px;
+  background-color: #00aa4f;
+  height: 15px;
+  margin: 0 2px;
+  border-radius: 8px;
+  position: relative;
 }
 
 .admin .btns {
-  margin: 40px;
+  display: block;
+  width: 100%;
+  margin: 20px 0;
 }
 
-.admin .btns button {
+.admin .btns a {
+  text-decoration: none;
   padding: 5px 10px;
   border-radius: 10px;
-  border: solid orange 1px;
+  border: solid #fbad77 2px;
   width: 100px;
   font-weight: 500;
   color: dimgray;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  width: 182px;
+  height: 45px;
+  line-height: 30px;
+  font-size: 22px;
 }
 
 .admin .btns .bg-orange {
-  background-color: orange;
+  background-color: #ff7d23;
   color: #fff;
   margin: 0 10px;
-}
-
-.admin input {
-  width: 100% !important;
-  margin: 10px 0;
-  border-radius: 10px;
-  border: solid orange 2px;
-  height: 30px;
-  outline: none;
-  padding: 20px;
-  text-align: center;
+  border: none;
 }
 
 .admin #pet-select {
   width: 100%;
   margin: 10px 0;
   border-radius: 10px;
-  border: solid orange 2px;
+  border: solid #fbad77 2px;
   height: 42px;
   outline: none;
   padding: 0 20px;
@@ -72,12 +101,85 @@ html, body {
 
 .admin .col-lg-11 {
   background-color: #fff;
+}
+
+.admin .col-lg-11 .form-check {
+  display: inline-block;
+  margin: 10px;
+}
+
+.admin .col-lg-11 .form-check label {
+  font-size: 22px;
+  line-height: 22px;
+  color: #43454b;
+}
+
+.admin .form .col-lg-11 {
+  background-color: #fff;
   padding: 20px;
   border-radius: 5px;
 }
 
-.admin .col-lg-11 .sd-none {
+.admin .form .col-lg-11 p {
+  font-size: 24px;
+  line-height: 22px;
+  color: #43454b;
+}
+
+.admin .form .col-lg-11 h4 {
+  font-size: 24px;
+  line-height: 22px;
+  color: #43454b;
+  font-weight: bold;
+}
+
+.admin .form .col-lg-11 .sd-none {
   display: none;
+}
+
+.admin .form .col-lg-11 input {
+  width: 100% !important;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: solid #fbad77 2px;
+  height: 51px;
+  outline: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.admin .form .col-lg-11 input::-webkit-input-placeholder {
+  font-size: 20px;
+  line-height: 22px;
+  color: #85878b;
+}
+
+.admin .form .col-lg-11 input:-ms-input-placeholder {
+  font-size: 20px;
+  line-height: 22px;
+  color: #85878b;
+}
+
+.admin .form .col-lg-11 input::-ms-input-placeholder {
+  font-size: 20px;
+  line-height: 22px;
+  color: #85878b;
+}
+
+.admin .form .col-lg-11 input::placeholder {
+  font-size: 20px;
+  line-height: 22px;
+  color: #85878b;
+}
+
+.admin .form #company p {
+  font-size: 24px;
+  line-height: 22px;
+  color: #43454b;
+}
+
+.admin .dividere {
+  border-bottom: solid #929292 1px;
 }
 
 @media only screen and (max-width: 768px) {

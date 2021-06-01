@@ -8,51 +8,74 @@
 html , body{
     font-size: 16px;
     background-color: rgb(227, 243, 245);
+    scroll-behavior: smooth;
 }
 
 .admin{
+    .achieved{
+        width: 95px;
+        height: 63px;
+        font-size: 20px;
+        color: #2c2e35;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        .flex-column{
+            p{
+                color: chocolate;
+            }
+        }
+    }
     .green{
-        padding: 8px;
-        width: 100%;
-        background-color: green;
-        border-radius: 10px;
+        width: 260px;
+        background-color: #00aa4f;
+        height: 15px;
+        margin: 0 2px;
+        border-radius: 8px;
+        position: relative;
+        
+ 
     }
 
-    .btns{
-        margin: 40px;
-        button{
 
+    .btns{
+        display: block;
+        width: 100%;
+        margin: 20px 0 ;
+        a{
+            text-decoration: none;
             padding:5px 10px;
             border-radius: 10px;
-            border: solid orange 1px;
+            border: solid #fbad77 2px;
             width: 100px;
             font-weight: 500;
             color: rgb(105, 105, 105);
+            display: inline-block;
+            width: 120px;
+            text-align: center;
+            width: 182px;
+            height: 45px;
+            line-height: 30px;
+            font-size: 22px;
         }
 
         .bg-orange{
-            background-color: orange;
+            background-color: #ff7d23;
             color: #fff;
             margin: 0 10px;
+            border: none;
         }
     }
 
-    input {
-        width: 100% !important;
-        margin: 10px 0;
-        border-radius: 10px;
-        border: solid orange 2px;
-        height: 30px;
-        outline: none;
-        padding: 20px;
-        text-align: center;
-    }
-
+   
     #pet-select{
         width: 100%;
         margin: 10px 0;
         border-radius: 10px;
-        border: solid orange 2px;
+        border: solid #fbad77 2px;
         height: 42px;
         outline: none;
         padding: 0 20px;
@@ -72,17 +95,73 @@ html , body{
             color: #fff;
         }
     }
-
+    
     .col-lg-11{
         background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-
-        .sd-none{
-            display: none;
+        .form-check{
+            display: inline-block;
+            margin: 10px;
+            
+            label{
+                font-size: 22px;
+                line-height: 22px;
+                color: #43454b;
+            }
         }
     }
+  
+    .form{
+        .col-lg-11{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            
+            p{
+                font-size: 24px;
+                line-height: 22px;
+                color: #43454b;
+            }
 
+            h4{
+                font-size: 24px;
+                line-height: 22px;
+                color: #43454b;
+                font-weight: bold;
+            }
+            .sd-none{
+                display: none;
+            }
+            input {
+                width: 100% !important;
+                margin: 10px 0;
+                border-radius: 15px;
+                border: solid #fbad77 2px;
+                height: 51px;
+                outline: none;
+                padding: 20px;
+                text-align: center;
+
+                &::placeholder{
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: #85878b;
+                }
+            }
+            
+        }
+
+        #company{
+            p{
+                font-size: 24px;
+                line-height: 22px;
+                color: #43454b;
+            }
+        }
+}
+
+.dividere{
+    border-bottom: solid rgb(146, 146, 146) 1px;
+}
     @media only screen and (max-width: 768px){
         &{
             .gstin{
